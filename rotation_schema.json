@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "origin_hint": { "type": "array", "items": { "type": "integer" }, "minItems": 3, "maxItems": 3 },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "x": { "type": "integer" },
+          "y": { "type": "integer" },
+          "z": { "type": "integer" },
+          "rotation": { "type": "integer" },
+          "sideOnly": { "type": "boolean" }
+        },
+        "required": ["x","y","z","rotation","sideOnly"]
+      }
+    },
+    "search": {
+      "type": "object",
+      "properties": {
+        "xMin": {"type":"integer"}, "xMax": {"type":"integer"},
+        "yMin": {"type":"integer"}, "yMax": {"type":"integer"},
+        "zMin": {"type":"integer"}, "zMax": {"type":"integer"},
+        "threads": {"type":"integer"}
+      },
+      "required": ["xMin","xMax","yMin","yMax","zMin","zMax","threads"]
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["VanillaTextures","Vanilla21_1Textures","Vanilla12Textures","SodiumTextures","Sodium19Textures"]
+    }
+  },
+  "required": ["observations","search","mode"]
+}
