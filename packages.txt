@@ -1,3 +1,2 @@
-# needed on Streamlit Cloud (apt)
 default-jdk-headless
 git
