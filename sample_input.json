@@ -1,0 +1,15 @@
+{
+  "origin_hint": [0, 0, 0],
+  "observations": [
+    {"x": 1, "y": 0, "z": 0, "rotation": 1, "sideOnly": false},
+    {"x": -2, "y": 0, "z": 3, "rotation": 0, "sideOnly": false},
+    {"x": 0, "y": 0, "z": -1, "rotation": 2, "sideOnly": false}
+  ],
+  "search": {
+    "xMin": -2048, "xMax": 2048,
+    "yMin": 0,     "yMax": 255,
+    "zMin": -2048, "zMax": 2048,
+    "threads": 8
+  },
+  "mode": "Vanilla21_1Textures"
+}
